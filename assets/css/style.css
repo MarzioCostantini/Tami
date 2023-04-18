@@ -1,0 +1,495 @@
+@font-face {
+  font-family: NewYork;
+  src: url(../fonts/NewYork.ttf);
+}
+@font-face {
+  font-family: Euclid;
+  src: url(../fonts/Euclid\ Circular\ A\ Regular.ttf);
+}
+@font-face {
+  font-family: EuclidBold;
+  src: url(../fonts/Euclid\ Circular\ A\ Bold.ttf);
+}
+@font-face {
+  font-family: EuclidLight;
+  src: url(../fonts/Euclid\ Circular\ A\ Light.ttf);
+}
+
+body {
+  background-color: var(--black);
+}
+
+:root {
+  --black: #272422;
+  --maincolor: #e8bf96;
+  --lightgray: #999999;
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  color: var(--white);
+  font-family: Euclid, Arial, Helvetica, sans-serif;
+}
+img {
+  max-width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5rem;
+  font-family: NewYork, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+h1 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  margin-bottom: 15vh;
+}
+
+h2 {
+  font-size: clamp(2rem, 11vw, 8rem);
+  transition: 0.2s;
+}
+h3 {
+  font-size: clamp(1.4rem, 8vw, 3rem);
+}
+h4 {
+  font-size: 7rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--lightgray);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.color {
+  color: var(--maincolor);
+}
+
+.fat {
+  color: var(--white);
+}
+.line {
+  width: 80vw;
+  height: 0.1px;
+  background-color: var(--lightgray);
+  margin: 0 auto 10rem auto;
+}
+
+.fatline {
+  width: 20vw;
+  height: 2px;
+  background-color: var(--lightgray);
+}
+
+.btn {
+  border: 0.1px solid var(--lightgray);
+  padding: 2.5rem 3.5rem;
+  border-radius: 100%;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: var(--maincolor);
+  color: var(--black);
+}
+
+/* HEADER */
+
+header {
+  background: url(../img/19.png) no-repeat top center;
+  background-size: contain;
+  margin: 0 10vw 10rem 10vw;
+  object-fit: contain;
+  position: relative;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 -10vw 3rem -10vw;
+}
+
+nav h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav a {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+/* HEADER SEC EINS */
+
+.header-top {
+  display: flex;
+  justify-content: center;
+}
+
+.header-top .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.content h2 {
+  font-size: clamp(2rem, 15vw, 9rem);
+  line-height: 80px;
+}
+
+.dekoimg {
+  position: relative;
+  height: 250px;
+  width: 200px;
+  background: url("../img/17.jpeg") no-repeat center;
+  margin: 5rem 0 0 0;
+  background-size: cover;
+}
+
+.dekoimg img {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  height: 25px;
+}
+.left {
+  width: 23vw;
+  object-fit: contain;
+  height: 32vw;
+  margin: 10rem -4rem 0 0;
+}
+.left img {
+  margin-bottom: 15rem;
+}
+.voice-of {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.voice-of img {
+  margin: 0 0 1rem 0;
+  height: 12px;
+}
+
+.voice-of .stars {
+  height: auto;
+  width: 30px;
+}
+
+.left h3 {
+  font-size: 1.4rem;
+  font-family: Euclid, Arial, Helvetica, sans-serif;
+  width: 110px;
+}
+.right {
+  width: 23vw;
+  object-fit: contain;
+  height: 42vw;
+  margin: 0 0 10rem -3rem;
+}
+.right img {
+  margin-bottom: 25rem;
+}
+.right p {
+  width: 25vw;
+}
+
+.dreick-wrapp {
+  border: 1px solid var(--lightgray);
+  padding: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+
+  cursor: pointer;
+  width: 8rem;
+  height: 8rem;
+  transition: 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.dreick-wrapp img {
+  height: 2rem;
+}
+
+.dreick-wrapp:hover {
+  transform: scale(1.1);
+}
+
+.arrow {
+  position: absolute;
+  right: -10vw;
+  bottom: 20vh;
+  width: 50px;
+}
+
+/* MAIN */
+
+/* sing */
+
+.sing {
+  text-align: center;
+  width: 70vw;
+  max-width: 700px;
+  margin: 0 auto 10rem auto;
+}
+
+.sing p {
+  margin-bottom: 5rem;
+}
+
+/* work */
+
+.work {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+.work h2 {
+  max-width: 500px;
+  margin-bottom: 5rem;
+}
+
+.wrp-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.wrp-inner div {
+  display: flex;
+  gap: 30px;
+}
+
+.wrp-inner p {
+  max-width: 300px;
+  margin-top: -0.5rem;
+}
+
+.work article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10vw;
+}
+
+.work article a div {
+  height: 70vh;
+  min-width: 30vw;
+  padding: 3rem;
+}
+
+.work article a div img {
+  margin-bottom: 1.5rem;
+}
+
+.work article div p {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.work article h3 {
+  max-width: 50%;
+}
+
+.work .one {
+  background: url("../img/15.jpeg") no-repeat center;
+  background-size: cover;
+  place-self: center center;
+  padding: 3rem;
+  height: 90vh;
+}
+
+.work .two {
+  background: url("../img/16.jpeg") no-repeat center;
+  height: 80vh;
+  background-size: cover;
+}
+.work .three {
+  background: url("../img/20.jpeg") no-repeat center;
+  place-self: center flex-start;
+  background-size: cover;
+}
+.work .four {
+  background: url("../img/24.jpeg") no-repeat center;
+  place-self: center center;
+  margin-left: -3vw;
+  background-size: cover;
+}
+
+.work article img,
+.work article p,
+.work article h3 {
+  display: none;
+}
+
+/* .work article div a:hover .work article img,
+.work article p,
+.work article h3 {
+  display: block;
+} */
+
+.one:hover h3,
+.one:hover p,
+.one:hover img,
+.two:hover h3,
+.two:hover p,
+.two:hover img,
+.three:hover h3,
+.three:hover p,
+.three:hover img,
+.four:hover h3,
+.four:hover p,
+.four:hover img {
+  display: block;
+}
+
+/* Packete */
+
+.service {
+  width: 80vw;
+  margin: 0 auto 10rem auto;
+}
+
+.serviceline {
+  display: flex;
+  justify-content: space-between;
+}
+.serviceline p {
+  color: var(--white);
+}
+
+.service article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.service article h2 {
+  margin-bottom: 0.5rem;
+}
+.service article p {
+  margin-bottom: 3rem;
+}
+
+/* .listcontent {
+  position: relative;
+  width: 100%;
+} */
+
+.leftimg {
+  height: 300px;
+  width: 200px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.rightimg {
+  height: 200px;
+  width: 200px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.gold,
+.indi,
+.silver,
+.white {
+  cursor: pointer;
+  position: relative;
+  width: 85vw;
+  height: auto;
+}
+/* Hover Service */
+
+.indi:hover h2,
+.gold:hover h2,
+.silver:hover h2,
+.white:hover h2 {
+  color: var(--maincolor);
+}
+
+/* Indi */
+
+.indi:hover .rightimg {
+  background: url("../img/13.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+}
+.indi:hover .leftimg {
+  background: url("../img/15.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+  bottom: -100px;
+}
+
+/* Gold */
+
+.gold:hover .rightimg {
+  background: url("../img/1.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+}
+.gold:hover .leftimg {
+  background: url("../img/13.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+  bottom: -100px;
+}
+
+/* Silver */
+
+.silver:hover .rightimg {
+  background: url("../img/16.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+}
+.silver:hover .leftimg {
+  background: url("../img/17.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+  bottom: -100px;
+}
+
+/* White */
+
+.white:hover .rightimg {
+  background: url("../img/13.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+}
+.white:hover .leftimg {
+  background: url("../img/15.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 1;
+  bottom: -100px;
+}

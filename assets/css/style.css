@@ -82,6 +82,15 @@ a {
 .fat {
   color: var(--white);
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
 .line {
   width: 80vw;
   height: 0.1px;
@@ -540,4 +549,37 @@ nav a {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+/* Footer */
+
+footer {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto 0 auto;
+  border-top: 0.2px solid var(--lightgray);
+  padding: 5rem 0;
+}
+
+footer h2 {
+  font-size: 2rem;
+}
+
+.social div a {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem 0 0;
+}
+
+.social p a {
+  color: var(--white);
+}
+
+.social p {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--lightgray);
 }
